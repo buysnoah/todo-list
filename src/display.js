@@ -37,7 +37,7 @@ function createTodoElement(todo) {
     const date = createElement("span", "date");
     date.textContent = todo.formatDueDate("y-M-d");
 
-    let toggle = description.style.display === "none";
+    let toggle = description.style.display !== "none";
     const expandButton = createElement("button", "expand");
     expandButton.classList.add("material-symbols-outlined");
 
