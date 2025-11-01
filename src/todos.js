@@ -7,6 +7,7 @@ class Todo {
         this.dueDate = new Date(dateString);
         this.priority = priority;
         this.project = project;
+        this.complete = false;
     }
 
     setDate(dateString) {
