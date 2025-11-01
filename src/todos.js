@@ -10,11 +10,11 @@ class Todo {
         this.complete = false;
     }
 
-    setDate(dateString) {
+    setDueDate(dateString) {
         this.dueDate = new Date(dateString);
     }
 
-    formatDate(formatStr) {
+    formatDueDate(formatStr) {
         return format(this.dueDate, formatStr);
     }
 
